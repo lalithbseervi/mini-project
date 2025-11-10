@@ -11,7 +11,6 @@ html, body {
     padding-top: 72px; 
     padding-bottom: 88px;
     text-align: center;
-    position: relative;
     background: radial-gradient(circle at 50% 50%, rgba(74, 107, 255, 0.08) 0%, transparent 50%);
 }
 

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Removed CSS variables; using fixed pixel values instead */
 
 body {
     font-family: Arial, sans-serif;
@@ -21,7 +20,7 @@ body {
 
 .header {
     background-color: #ffffff;
-    height: 72px; /* previously var(--header-h) */
+    height: 72px;
     position: fixed;
     width: 100%;
     top: 0;

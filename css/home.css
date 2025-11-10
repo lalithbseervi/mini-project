@@ -1,0 +1,37 @@
+html, body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 72px; 
+    padding-bottom: 88px;
+    text-align: center;
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, rgba(74, 107, 255, 0.08) 0%, transparent 50%);
+}
+
+.main-content { max-width: 900px; padding: 20px; }
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.highlight { color: #4a6bff; }
+
+.main-description {
+    font-size: 20px;
+    color: #4a5568;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.btn { padding: 12px 20px; }

@@ -1,0 +1,124 @@
+/* Portfolio Styles */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background: #ffffff;
+  border: 2px solid #e0e6ed;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(74, 107, 255, 0.15);
+  border-color: #4a6bff;
+}
+
+.portfolio-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfolio-details {
+  padding: 25px;
+}
+
+.portfolio-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.project-category {
+  color: #4a6bff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.project-description {
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  background: rgba(74, 107, 255, 0.1);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #2d3748;
+  border: 1px solid rgba(74, 107, 255, 0.2);
+}
+
+/* Stats Section */
+.stats-section {
+  margin: 60px 0;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 2px solid #e0e6ed;
+  border-radius: 15px;
+  padding: 30px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(74, 107, 255, 0.15);
+  border-color: #4a6bff;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4a6bff;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #2d3748;
+}

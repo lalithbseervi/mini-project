@@ -1,0 +1,15 @@
+/* Testimonial Styles */
+.testimonial-grid { display: flex; flex-wrap: wrap; gap: 30px; margin: 40px 0; justify-content: center; }
+.testimonial-card { background: #ffffff; border: 2px solid #e0e6ed; border-radius: 15px; padding: 30px; width: 350px; transition: transform 0.3s, box-shadow 0.3s; }
+.testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(74, 107, 255, 0.15); border-color: #4a6bff; }
+.testimonial-rating { font-size: 20px; margin-bottom: 15px; }
+.testimonial-text { color: #2d3748; line-height: 1.7; margin-bottom: 20px; font-style: italic; font-size: 15px; }
+.testimonial-author { display: flex; align-items: center; gap: 15px; }
+.author-avatar { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; }
+.author-info h4 { margin: 0; font-size: 16px; color: #1a202c; }
+.author-info p { margin: 5px 0 0 0; font-size: 14px; color: #718096; }
+
+/* Client Logos */
+.client-logos { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 40px 0; }
+.client-logo { background: #ffffff; border: 2px solid #e0e6ed; border-radius: 10px; padding: 20px 30px; font-size: 18px; font-weight: bold; color: #2d3748; transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+.client-logo:hover { background-color: #4a6bff; color: white; border-color: #4a6bff; }

@@ -41,6 +41,8 @@ body {
     color: #2c3e50;
 }
 
+/* classes for navigation bar */
+
 .nav-link {
     color: #2c3e50;
     text-decoration: none;
@@ -50,6 +52,8 @@ body {
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     font-weight: 500;
 }
+
+/* fill color on hover and change border color */
 
 .nav-link:hover {
     background-color: #4a6bff;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission - Web Designing Agency</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .response-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 2px solid #e0e6ed;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+        
+        .response-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            color: #1a202c;
+            margin-bottom: 15px;
+        }
+        
+        .response-subtitle {
+            font-size: 18px;
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+        
+        .data-table {
+            width: 100%;
+            margin: 30px 0;
+        }
+        
+        .data-row {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e6ed;
+        }
+        
+        .data-row:last-child {
+            border-bottom: none;
+        }
+        
+        .data-label {
+            flex: 0 0 200px;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        
+        .data-value {
+            flex: 1;
+            color: #4a5568;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .note-box {
+            background: rgba(74, 107, 255, 0.08);
+            border: 1px solid rgba(74, 107, 255, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .note-box p {
+            margin: 5px 0;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="color: #2c3e50; text-decoration: none;">Web Designing Agency</a></div>
+            <div class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="response-container">
+                <h1 class="response-title">Thank You for Contacting Us!</h1>
+                <p class="response-subtitle">We have received your message and will get back to you within 24 hours.</p>
+                
+                <h2 style="font-size: 24px; color: #1a202c; margin-bottom: 20px;">Submitted Information:</h2>
+                
+                <div class="data-table" id="dataDisplay"></div>
+                
+                <div class="note-box">
+                    <p><strong>What happens next?</strong></p>
+                    <p>Our team will review your requirements and reach out to you via email or phone.</p>
+                    <p>For urgent inquiries, please call us at +91 1234567890</p>
+                </div>
+                
+                <div class="button-group">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    <a href="contact.html" class="btn btn-secondary">Submit Another Request</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a> | 
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>© <span id="year"></span> Web Designing Agency. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+        
+        // Extract and display form data from URL parameters
+        var params = new URLSearchParams(window.location.search);
+        var dataDisplay = document.getElementById('dataDisplay');
+        
+        // Field labels mapping
+        var fieldLabels = {
+            'name': 'Full Name',
+            'email': 'Email Address',
+            'phone': 'Phone Number',
+            'service': 'Service Interested In',
+            'budget': 'Budget Range',
+            'timeline': 'Expected Timeline',
+            'message': 'Project Details',
+            'newsletter': 'Newsletter Subscription'
+        };
+        
+        // Display each parameter
+        params.forEach(function(value, key) {
+            var row = document.createElement('div');
+            row.className = 'data-row';
+            
+            var label = document.createElement('div');
+            label.className = 'data-label';
+            label.innerHTML = fieldLabels[key] || key;
+            
+            var valueDiv = document.createElement('div');
+            valueDiv.className = 'data-value';
+            
+            // Format the value based on field type
+            if (key === 'newsletter') {
+                valueDiv.innerHTML = value === 'on' ? 'Yes' : 'No';
+            } else if (value === '') {
+                valueDiv.innerHTML = '<em>Not provided</em>';
+            } else {
+                valueDiv.innerHTML = value;
+            }
+            
+            row.appendChild(label);
+            row.appendChild(valueDiv);
+            dataDisplay.appendChild(row);
+        });
+        
+        // If no parameters, show message
+        if (!params.toString()) {
+            dataDisplay.innerHTML = '<p style="text-align: center; color: #718096;">No form data received. Please submit the contact form.</p>';
+        }
+    </script>
+</body>
+</html>

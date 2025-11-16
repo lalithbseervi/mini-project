@@ -1,0 +1,35 @@
+/* (Privacy & Terms) Styles */
+.policy-content {
+  background: #ffffff;
+  border: 2px solid #e0e6ed;
+  border-radius: 12px;
+  padding: 28px;
+  line-height: 1.9;
+  color: #2d3748;
+}
+
+.policy-content h2 {
+  font-size: 22px;
+  color: #1a202c;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.policy-content h3 {
+  font-size: 18px;
+  color: #1a202c;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.policy-content p { margin: 10px 0; }
+.policy-content ul, .policy-content ol { padding-left: 20px; margin: 10px 0; }
+.policy-content li { margin: 6px 0; }
+
+.policy-acknowledgment {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(74, 107, 255, 0.08);
+  border: 1px solid rgba(74, 107, 255, 0.2);
+  border-radius: 8px;
+}

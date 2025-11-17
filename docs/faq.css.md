@@ -95,6 +95,11 @@ Styles for accordion-style FAQ with expandable/collapsible answers.
 - `max-height: 0` → `max-height: 1000px` → Works!
 **Tradeoff:** Transition speed varies with content length (longer content = slower)
 
+**References:**
+- [MDN: max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
+- [Stack Overflow: Transition height: 0 to height: auto using CSS?](https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css)
+- [Stack Overflow: Smooth accordion animation with max-height](https://stackoverflow.com/questions/23450158/css-transition-height-0-to-height-auto)
+
 ## FAQ Icon
 
 ```css
@@ -132,3 +137,7 @@ Styles for accordion-style FAQ with expandable/collapsible answers.
 ```
 **Underline on hover only:** Cleaner appearance, still accessible
 **Brand color:** Distinguishes links from body text
+
+**References:**
+- [MDN: :hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
+- [MDN: text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)

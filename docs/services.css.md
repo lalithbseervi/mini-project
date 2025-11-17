@@ -16,6 +16,11 @@ Styles for service cards, pricing tiers, comparison tables, and add-ons.
 ```
 **Flex over Grid:** More flexible wrapping behavior for varied screen sizes
 **`justify-content: center`:** Cards center when row isn't full
+b
+**References:**
+- [MDN: flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+- [MDN: gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
+- [Stack Overflow: When to use flexbox vs CSS Grid?](https://stackoverflow.com/questions/45536537/when-to-use-css-grid-layout-vs-flexbox)
 
 ### Card Sizing
 ```css
@@ -59,6 +64,10 @@ Styles for service cards, pricing tiers, comparison tables, and add-ons.
 **Why this works:** Parent `.service-card` has default `position: relative`
 **Visual effect:** Badge appears to "float" above card
 
+**References:**
+- [MDN: position (absolute)](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute)
+- [Stack Overflow: What is the difference between position: absolute and position: relative?](https://stackoverflow.com/questions/10426497/what-is-the-difference-between-position-absolute-and-position-relative)
+
 ## Feature List
 
 ### Custom Checkmarks
@@ -75,6 +84,10 @@ Styles for service cards, pricing tiers, comparison tables, and add-ons.
 **Why not list-style:** More control over appearance and color
 **`left: 0`:** Aligns with `padding-left: 25px` on `li`
 
+**References:**
+- [MDN: ::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before)
+- [MDN: content](https://developer.mozilla.org/en-US/docs/Web/CSS/content)
+
 ## Comparison Table
 
 ### Table Styling
@@ -86,6 +99,10 @@ Styles for service cards, pricing tiers, comparison tables, and add-ons.
 ```
 **`border-collapse: collapse`:** Removes gaps between table cells
 **`overflow: hidden`:** Clips content to rounded corners (on container)
+
+**References:**
+- [MDN: border-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
+- [MDN: overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 
 ### Header Gradient
 ```css

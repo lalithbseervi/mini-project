@@ -34,3 +34,9 @@ document.getElementById('year').innerHTML = new Date().getFullYear();
 - `.innerHTML` updates DOM element content
 
 **Benefits:** Automatically updates copyright year without manual edits.
+
+**References:**
+- [MDN: Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [MDN: Date.getFullYear()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)
+- [MDN: Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+- [MDN: Document.getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)

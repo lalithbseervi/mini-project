@@ -20,6 +20,10 @@ Styles specific to the homepage hero section.
 - `justify-content: center` → horizontal centering
 **Result:** Content perfectly centered on screen
 
+**References:**
+- [MDN: min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)
+- [Stack Overflow: How to center vertically and horizontally with flexbox?](https://stackoverflow.com/questions/19461521/how-to-center-an-element-horizontally-and-vertically)
+
 ### Background Effect
 ```css
 background: radial-gradient(circle at 50% 50%, rgba(74, 107, 255, 0.08) 0%, transparent 50%);
@@ -32,6 +36,10 @@ background: radial-gradient(circle at 50% 50%, rgba(74, 107, 255, 0.08) 0%, tran
 **`transparent 50%`:** Fades to transparent at 50% radius
 **Visual effect:** Soft blue glow behind hero content without overwhelming text
 
+**References:**
+- [MDN: radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
+- [MDN: CSS Gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients)
+
 ### Typography
 ```css
 .hero-title {
@@ -43,6 +51,10 @@ background: radial-gradient(circle at 50% 50%, rgba(74, 107, 255, 0.08) 0%, tran
 - Tight spacing for headlines (1.2 × font-size)
 - Default is typically 1.5
 - Tighter feels more impactful, less reading-focused
+
+**References:**
+- [MDN: line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+- [MDN: font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
 
 ### Highlight Color
 ```css

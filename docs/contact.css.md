@@ -31,6 +31,11 @@ Styles for contact form, info cards, and map.
 - `420px`: flex-basis (starting width)
 **Result:** Columns equal width, wrap below 420px, never exceed 520px
 
+**References:**
+- [MDN: flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+- [MDN: flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)
+- [Stack Overflow: What are flex-grow, flex-shrink and flex-basis?](https://stackoverflow.com/questions/28542031/what-are-the-differences-between-flex-basis-and-width)
+
 ## Form Styles
 
 ### Input Focus States
@@ -43,6 +48,11 @@ Styles for contact form, info cards, and map.
 ```
 **`outline: none`:** Removes default browser outline
 **Background change:** `#f8fafc` → `#ffffff` provides subtle visual feedback
+
+**References:**
+- [MDN: :focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus)
+- [MDN: outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+- [Stack Overflow: How to remove outline around input elements?](https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element)
 
 ### Transitions
 ```css
@@ -60,6 +70,10 @@ transition: border-color 0.3s, background-color 0.3s;
 ```
 **`width: auto`:** Overrides `width: 100%` from general input styling
 **Why needed:** Full-width checkboxes look bad
+
+**References:**
+- [MDN: Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+- [MDN: width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 
 ## Info Cards
 

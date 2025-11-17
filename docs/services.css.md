@@ -24,7 +24,6 @@ Styles for service cards, pricing tiers, comparison tables, and add-ons.
 }
 ```
 **Fixed width:** Maintains consistent card sizes regardless of content
-**Alternative:** Could use `flex-basis` for more flexibility
 
 ### Hover Transform
 ```css

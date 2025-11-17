@@ -3,6 +3,10 @@
 ## Overview
 Styles specific to the homepage hero section.
 
+## Video play on loading the page
+**References:**
+- [w3schools](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
+
 ## Hero Section
 
 ### Layout
